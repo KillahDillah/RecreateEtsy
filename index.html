@@ -8,10 +8,8 @@
 	<div class="header">
 		<img src="Etsy.57 PM.png" id="logo" />
 		<form class="search_bar">
-			<input type="search" id="search" placeholder="Search for items or shops">
-			<div id="button">
-				<button>Search</button>
-			</div>
+			<input type="text" id="search" placeholder="Search for items or shops">
+			<button>Search</button>
 		</form>
 		<div class="header_nav">
 			<ul class="header_nav_list">
@@ -40,10 +38,902 @@
 			</div>
 		</div>
 		<div class="content">
+		<br>
+		<br>
+		<div class="sidebar">
+			<div class="one">
+				<ul class="list">
+					<li id="list_head">All categories</li>
+					<li>Home & Living</li>
+					<li>Art & Collectibles</li>
+					<li>Weddings</li>
+					<li>Clothing</li>
+					<li>Paper & Party Supplies</li>
+					<li>Jewelry</li>
+					<li>Craft Supplies & Tools</li>
+					<li>Accessories</li>
+					<li>Bags & Purses</li>
+					<li>Bath & Beauty</li>
+					<li>Books, Movies & Music</li>
+					<li>Shoes</li>
+					<li>Electronics & Accessories</li>
+					<li>Toys & Games</li>
+					<li>Pet Supplies</li>
+				</ul>
+			</div>
+			<div class="one">
+				<form class="search_reset">
+					<h4>Shop location</h4>
+					<div id="radio"><input type="radio" name="location"> Anywhere </div>
+					<div id="radio"><input type="radio" name="location"> United States<br></div>
+					<div id="radio"><input type="radio" name="location"> Custom<br>
+						<div class="enter_location">
+							<input type="text" name="enter_location" placeholder="Enter location" id="location">
+							<button id="arrow">></button>
+						</div>
+					</div>
+				</form>	
+			</div>
+			<div class="one">
+				<form class="search_reset">
+				<h4>Item type</h4>
+					<div id="radio"><input type="radio" name="item"> All items </div>
+					<div id="radio"><input type="radio" name="item"> Handmade<br></div>
+					<div id="radio"><input type="radio" name="item"> Vintage<br></div>
+				</form>
+			</div>
+			<div class="one">
+				<form class="search_reset">
+				<h4>Price ($)</h4>
+					<div id="radio"><input type="radio" name="price"> Any price </div>
+					<div id="radio"><input type="radio" name="price"> Under $25<br></div>
+					<div id="radio"><input type="radio" name="price"> $25 to $50<br></div>
+					<div id="radio"><input type="radio" name="price"> $50 to $100<br></div>
+					<div id="radio"><input type="radio" name="price"> Over $100<br></div>
+					<div id="radio"><input type="radio" name="price"> Custom<br></div>
+						<div class="price_range">
+							<input type="text" name="price_range" placeholder="Low" id="price_range">
+							to
+							<input type="text" name="price_range" placeholder="High" id="price_range">
+							<button id="arrow">></button>
+						</div>
+				</form>
+			</div>
+			<div class="one">
+				<h4>Filter by color</h4>
+				<ul class="colors">
+					<li></li>
+				</ul>
+
+			</div>
+			<div class="one">
+				<h4>Ordering options</h4>
+					<div id="radio"><input type="checkbox" name="price"> Accepts Etsy gift cards </div>
+					<div id="radio"><input type="checkbox" name="price"> Customizable<br></div>
+			</div>
+			<div class="one">
+				<h4>Ship to</h4>
+				<select name="ship_to" class="select select-custom" id="ship_to_select">
+          <option value="ZZ">
+                
+           Choose country...
+                
+            </option>
+        
+       
+                    <optgroup label="————————">
+        
+                            
+            
+            <option value="AU" data-target="filter-node" data-context="region" data-path="Australia">
+                Australia
+            </option>
+                    
+            
+            <option value="CA" data-target="filter-node" data-context="region" data-path="Canada">
+                Canada
+            </option>
+                    
+            
+            <option value="FR" data-target="filter-node" data-context="region" data-path="France">
+                France
+            </option>
+                    
+            
+            <option value="DE" data-target="filter-node" data-context="region" data-path="Germany">
+                Germany
+            </option>
+                    
+            
+            <option value="GR" data-target="filter-node" data-context="region" data-path="Greece">
+                Greece
+            </option>
+                    
+            
+            <option value="IE" data-target="filter-node" data-context="region" data-path="Ireland">
+                Ireland
+            </option>
+                    
+            
+            <option value="IT" data-target="filter-node" data-context="region" data-path="Italy">
+                Italy
+            </option>
+                    
+            
+            <option value="JP" data-target="filter-node" data-context="region" data-path="Japan">
+                Japan
+            </option>
+                    
+            
+            <option value="NZ" data-target="filter-node" data-context="region" data-path="New Zealand">
+                New Zealand
+            </option>
+                    
+            
+            <option value="PT" data-target="filter-node" data-context="region" data-path="Portugal">
+                Portugal
+            </option>
+                    
+            
+            <option value="RU" data-target="filter-node" data-context="region" data-path="Russia">
+                Russia
+            </option>
+                    
+            
+            <option value="ES" data-target="filter-node" data-context="region" data-path="Spain">
+                Spain
+            </option>
+                    
+            
+            <option value="NL" data-target="filter-node" data-context="region" data-path="The Netherlands">
+                The Netherlands
+            </option>
+                    
+            
+            <option value="GB" data-target="filter-node" data-context="region" data-path="United Kingdom">
+                United Kingdom
+            </option>
+                    
+                                        
+            <option value="US" selected="selected" data-target="filter-node" data-context="region" data-path="United States">
+                United States
+            </option>
+        
+                    </optgroup>
+        
+        <optgroup label="————————">
+                                            <option value="AF" data-target="filter-node" data-context="region" data-path="Afghanistan">
+                    Afghanistan
+                </option>
+                                            <option value="AL" data-target="filter-node" data-context="region" data-path="Albania">
+                    Albania
+                </option>
+                                            <option value="DZ" data-target="filter-node" data-context="region" data-path="Algeria">
+                    Algeria
+                </option>
+                                            <option value="AS" data-target="filter-node" data-context="region" data-path="American Samoa">
+                    American Samoa
+                </option>
+                                            <option value="AD" data-target="filter-node" data-context="region" data-path="Andorra">
+                    Andorra
+                </option>
+                                            <option value="AO" data-target="filter-node" data-context="region" data-path="Angola">
+                    Angola
+                </option>
+                                            <option value="AI" data-target="filter-node" data-context="region" data-path="Anguilla">
+                    Anguilla
+                </option>
+                                            <option value="AG" data-target="filter-node" data-context="region" data-path="Antigua and Barbuda">
+                    Antigua and Barbuda
+                </option>
+                                            <option value="AR" data-target="filter-node" data-context="region" data-path="Argentina">
+                    Argentina
+                </option>
+                                            <option value="AM" data-target="filter-node" data-context="region" data-path="Armenia">
+                    Armenia
+                </option>
+                                            <option value="AW" data-target="filter-node" data-context="region" data-path="Aruba">
+                    Aruba
+                </option>
+                                            <option value="AU" data-target="filter-node" data-context="region" data-path="Australia">
+                    Australia
+                </option>
+                                            <option value="AT" data-target="filter-node" data-context="region" data-path="Austria">
+                    Austria
+                </option>
+                                            <option value="AZ" data-target="filter-node" data-context="region" data-path="Azerbaijan">
+                    Azerbaijan
+                </option>
+                                            <option value="BS" data-target="filter-node" data-context="region" data-path="Bahamas">
+                    Bahamas
+                </option>
+                                            <option value="BH" data-target="filter-node" data-context="region" data-path="Bahrain">
+                    Bahrain
+                </option>
+                                            <option value="BD" data-target="filter-node" data-context="region" data-path="Bangladesh">
+                    Bangladesh
+                </option>
+                                            <option value="BB" data-target="filter-node" data-context="region" data-path="Barbados">
+                    Barbados
+                </option>
+                                            <option value="BY" data-target="filter-node" data-context="region" data-path="Belarus">
+                    Belarus
+                </option>
+                                            <option value="BE" data-target="filter-node" data-context="region" data-path="Belgium">
+                    Belgium
+                </option>
+                                            <option value="BZ" data-target="filter-node" data-context="region" data-path="Belize">
+                    Belize
+                </option>
+                                            <option value="BJ" data-target="filter-node" data-context="region" data-path="Benin">
+                    Benin
+                </option>
+                                            <option value="BM" data-target="filter-node" data-context="region" data-path="Bermuda">
+                    Bermuda
+                </option>
+                                            <option value="BT" data-target="filter-node" data-context="region" data-path="Bhutan">
+                    Bhutan
+                </option>
+                                            <option value="BO" data-target="filter-node" data-context="region" data-path="Bolivia">
+                    Bolivia
+                </option>
+                                            <option value="BA" data-target="filter-node" data-context="region" data-path="Bosnia and Herzegovina">
+                    Bosnia and Herzegovina
+                </option>
+                                            <option value="BW" data-target="filter-node" data-context="region" data-path="Botswana">
+                    Botswana
+                </option>
+                                            <option value="BV" data-target="filter-node" data-context="region" data-path="Bouvet Island">
+                    Bouvet Island
+                </option>
+                                            <option value="BR" data-target="filter-node" data-context="region" data-path="Brazil">
+                    Brazil
+                </option>
+                                            <option value="IO" data-target="filter-node" data-context="region" data-path="British Indian Ocean Territory">
+                    British Indian Ocean Territory
+                </option>
+                                            <option value="VG" data-target="filter-node" data-context="region" data-path="British Virgin Islands">
+                    British Virgin Islands
+                </option>
+                                            <option value="BN" data-target="filter-node" data-context="region" data-path="Brunei">
+                    Brunei
+                </option>
+                                            <option value="BG" data-target="filter-node" data-context="region" data-path="Bulgaria">
+                    Bulgaria
+                </option>
+                                            <option value="BF" data-target="filter-node" data-context="region" data-path="Burkina Faso">
+                    Burkina Faso
+                </option>
+                                            <option value="BI" data-target="filter-node" data-context="region" data-path="Burundi">
+                    Burundi
+                </option>
+                                            <option value="KH" data-target="filter-node" data-context="region" data-path="Cambodia">
+                    Cambodia
+                </option>
+                                            <option value="CM" data-target="filter-node" data-context="region" data-path="Cameroon">
+                    Cameroon
+                </option>
+                                            <option value="CA" data-target="filter-node" data-context="region" data-path="Canada">
+                    Canada
+                </option>
+                                            <option value="CV" data-target="filter-node" data-context="region" data-path="Cape Verde">
+                    Cape Verde
+                </option>
+                                            <option value="KY" data-target="filter-node" data-context="region" data-path="Cayman Islands">
+                    Cayman Islands
+                </option>
+                                            <option value="CF" data-target="filter-node" data-context="region" data-path="Central African Republic">
+                    Central African Republic
+                </option>
+                                            <option value="TD" data-target="filter-node" data-context="region" data-path="Chad">
+                    Chad
+                </option>
+                                            <option value="CL" data-target="filter-node" data-context="region" data-path="Chile">
+                    Chile
+                </option>
+                                            <option value="CN" data-target="filter-node" data-context="region" data-path="China">
+                    China
+                </option>
+                                            <option value="CX" data-target="filter-node" data-context="region" data-path="Christmas Island">
+                    Christmas Island
+                </option>
+                                            <option value="CC" data-target="filter-node" data-context="region" data-path="Cocos (Keeling) Islands">
+                    Cocos (Keeling) Islands
+                </option>
+                                            <option value="CO" data-target="filter-node" data-context="region" data-path="Colombia">
+                    Colombia
+                </option>
+                                            <option value="KM" data-target="filter-node" data-context="region" data-path="Comoros">
+                    Comoros
+                </option>
+                                            <option value="CG" data-target="filter-node" data-context="region" data-path="Congo, Republic of">
+                    Congo, Republic of
+                </option>
+                                            <option value="CK" data-target="filter-node" data-context="region" data-path="Cook Islands">
+                    Cook Islands
+                </option>
+                                            <option value="CR" data-target="filter-node" data-context="region" data-path="Costa Rica">
+                    Costa Rica
+                </option>
+                                            <option value="HR" data-target="filter-node" data-context="region" data-path="Croatia">
+                    Croatia
+                </option>
+                                            <option value="CW" data-target="filter-node" data-context="region" data-path="Curaçao">
+                    Curaçao
+                </option>
+                                            <option value="CY" data-target="filter-node" data-context="region" data-path="Cyprus">
+                    Cyprus
+                </option>
+                                            <option value="CZ" data-target="filter-node" data-context="region" data-path="Czech Republic">
+                    Czech Republic
+                </option>
+                                            <option value="DK" data-target="filter-node" data-context="region" data-path="Denmark">
+                    Denmark
+                </option>
+                                            <option value="DJ" data-target="filter-node" data-context="region" data-path="Djibouti">
+                    Djibouti
+                </option>
+                                            <option value="DM" data-target="filter-node" data-context="region" data-path="Dominica">
+                    Dominica
+                </option>
+                                            <option value="DO" data-target="filter-node" data-context="region" data-path="Dominican Republic">
+                    Dominican Republic
+                </option>
+                                            <option value="EC" data-target="filter-node" data-context="region" data-path="Ecuador">
+                    Ecuador
+                </option>
+                                            <option value="EG" data-target="filter-node" data-context="region" data-path="Egypt">
+                    Egypt
+                </option>
+                                            <option value="SV" data-target="filter-node" data-context="region" data-path="El Salvador">
+                    El Salvador
+                </option>
+                                            <option value="GQ" data-target="filter-node" data-context="region" data-path="Equatorial Guinea">
+                    Equatorial Guinea
+                </option>
+                                            <option value="ER" data-target="filter-node" data-context="region" data-path="Eritrea">
+                    Eritrea
+                </option>
+                                            <option value="EE" data-target="filter-node" data-context="region" data-path="Estonia">
+                    Estonia
+                </option>
+                                            <option value="ET" data-target="filter-node" data-context="region" data-path="Ethiopia">
+                    Ethiopia
+                </option>
+                                            <option value="FK" data-target="filter-node" data-context="region" data-path="Falkland Islands (Malvinas)">
+                    Falkland Islands (Malvinas)
+                </option>
+                                            <option value="FO" data-target="filter-node" data-context="region" data-path="Faroe Islands">
+                    Faroe Islands
+                </option>
+                                            <option value="FJ" data-target="filter-node" data-context="region" data-path="Fiji">
+                    Fiji
+                </option>
+                                            <option value="FI" data-target="filter-node" data-context="region" data-path="Finland">
+                    Finland
+                </option>
+                                            <option value="FR" data-target="filter-node" data-context="region" data-path="France">
+                    France
+                </option>
+                                            <option value="GF" data-target="filter-node" data-context="region" data-path="French Guiana">
+                    French Guiana
+                </option>
+                                            <option value="PF" data-target="filter-node" data-context="region" data-path="French Polynesia">
+                    French Polynesia
+                </option>
+                                            <option value="TF" data-target="filter-node" data-context="region" data-path="French Southern Territories">
+                    French Southern Territories
+                </option>
+                                            <option value="GA" data-target="filter-node" data-context="region" data-path="Gabon">
+                    Gabon
+                </option>
+                                            <option value="GM" data-target="filter-node" data-context="region" data-path="Gambia">
+                    Gambia
+                </option>
+                                            <option value="GE" data-target="filter-node" data-context="region" data-path="Georgia">
+                    Georgia
+                </option>
+                                            <option value="DE" data-target="filter-node" data-context="region" data-path="Germany">
+                    Germany
+                </option>
+                                            <option value="GH" data-target="filter-node" data-context="region" data-path="Ghana">
+                    Ghana
+                </option>
+                                            <option value="GI" data-target="filter-node" data-context="region" data-path="Gibraltar">
+                    Gibraltar
+                </option>
+                                            <option value="GR" data-target="filter-node" data-context="region" data-path="Greece">
+                    Greece
+                </option>
+                                            <option value="GL" data-target="filter-node" data-context="region" data-path="Greenland">
+                    Greenland
+                </option>
+                                            <option value="GD" data-target="filter-node" data-context="region" data-path="Grenada">
+                    Grenada
+                </option>
+                                            <option value="GP" data-target="filter-node" data-context="region" data-path="Guadeloupe">
+                    Guadeloupe
+                </option>
+                                            <option value="GU" data-target="filter-node" data-context="region" data-path="Guam">
+                    Guam
+                </option>
+                                            <option value="GT" data-target="filter-node" data-context="region" data-path="Guatemala">
+                    Guatemala
+                </option>
+                                            <option value="GN" data-target="filter-node" data-context="region" data-path="Guinea">
+                    Guinea
+                </option>
+                                            <option value="GW" data-target="filter-node" data-context="region" data-path="Guinea-Bissau">
+                    Guinea-Bissau
+                </option>
+                                            <option value="GY" data-target="filter-node" data-context="region" data-path="Guyana">
+                    Guyana
+                </option>
+                                            <option value="HT" data-target="filter-node" data-context="region" data-path="Haiti">
+                    Haiti
+                </option>
+                                            <option value="HM" data-target="filter-node" data-context="region" data-path="Heard Island and McDonald Islands">
+                    Heard Island and McDonald Islands
+                </option>
+                                            <option value="VA" data-target="filter-node" data-context="region" data-path="Holy See (Vatican City State)">
+                    Holy See (Vatican City State)
+                </option>
+                                            <option value="HN" data-target="filter-node" data-context="region" data-path="Honduras">
+                    Honduras
+                </option>
+                                            <option value="HK" data-target="filter-node" data-context="region" data-path="Hong Kong">
+                    Hong Kong
+                </option>
+                                            <option value="HU" data-target="filter-node" data-context="region" data-path="Hungary">
+                    Hungary
+                </option>
+                                            <option value="IS" data-target="filter-node" data-context="region" data-path="Iceland">
+                    Iceland
+                </option>
+                                            <option value="IN" data-target="filter-node" data-context="region" data-path="India">
+                    India
+                </option>
+                                            <option value="ID" data-target="filter-node" data-context="region" data-path="Indonesia">
+                    Indonesia
+                </option>
+                                            <option value="IQ" data-target="filter-node" data-context="region" data-path="Iraq">
+                    Iraq
+                </option>
+                                            <option value="IE" data-target="filter-node" data-context="region" data-path="Ireland">
+                    Ireland
+                </option>
+                                            <option value="IM" data-target="filter-node" data-context="region" data-path="Isle of Man">
+                    Isle of Man
+                </option>
+                                            <option value="IL" data-target="filter-node" data-context="region" data-path="Israel">
+                    Israel
+                </option>
+                                            <option value="IT" data-target="filter-node" data-context="region" data-path="Italy">
+                    Italy
+                </option>
+                                            <option value="IC" data-target="filter-node" data-context="region" data-path="Ivory Coast">
+                    Ivory Coast
+                </option>
+                                            <option value="JM" data-target="filter-node" data-context="region" data-path="Jamaica">
+                    Jamaica
+                </option>
+                                            <option value="JP" data-target="filter-node" data-context="region" data-path="Japan">
+                    Japan
+                </option>
+                                            <option value="JO" data-target="filter-node" data-context="region" data-path="Jordan">
+                    Jordan
+                </option>
+                                            <option value="KZ" data-target="filter-node" data-context="region" data-path="Kazakhstan">
+                    Kazakhstan
+                </option>
+                                            <option value="KE" data-target="filter-node" data-context="region" data-path="Kenya">
+                    Kenya
+                </option>
+                                            <option value="KI" data-target="filter-node" data-context="region" data-path="Kiribati">
+                    Kiribati
+                </option>
+                                            <option value="KV" data-target="filter-node" data-context="region" data-path="Kosovo">
+                    Kosovo
+                </option>
+                                            <option value="KW" data-target="filter-node" data-context="region" data-path="Kuwait">
+                    Kuwait
+                </option>
+                                            <option value="KG" data-target="filter-node" data-context="region" data-path="Kyrgyzstan">
+                    Kyrgyzstan
+                </option>
+                                            <option value="LA" data-target="filter-node" data-context="region" data-path="Laos">
+                    Laos
+                </option>
+                                            <option value="LV" data-target="filter-node" data-context="region" data-path="Latvia">
+                    Latvia
+                </option>
+                                            <option value="LB" data-target="filter-node" data-context="region" data-path="Lebanon">
+                    Lebanon
+                </option>
+                                            <option value="LS" data-target="filter-node" data-context="region" data-path="Lesotho">
+                    Lesotho
+                </option>
+                                            <option value="LR" data-target="filter-node" data-context="region" data-path="Liberia">
+                    Liberia
+                </option>
+                                            <option value="LY" data-target="filter-node" data-context="region" data-path="Libya">
+                    Libya
+                </option>
+                                            <option value="LI" data-target="filter-node" data-context="region" data-path="Liechtenstein">
+                    Liechtenstein
+                </option>
+                                            <option value="LT" data-target="filter-node" data-context="region" data-path="Lithuania">
+                    Lithuania
+                </option>
+                                            <option value="LU" data-target="filter-node" data-context="region" data-path="Luxembourg">
+                    Luxembourg
+                </option>
+                                            <option value="MO" data-target="filter-node" data-context="region" data-path="Macao">
+                    Macao
+                </option>
+                                            <option value="MK" data-target="filter-node" data-context="region" data-path="Macedonia">
+                    Macedonia
+                </option>
+                                            <option value="MG" data-target="filter-node" data-context="region" data-path="Madagascar">
+                    Madagascar
+                </option>
+                                            <option value="MW" data-target="filter-node" data-context="region" data-path="Malawi">
+                    Malawi
+                </option>
+                                            <option value="MY" data-target="filter-node" data-context="region" data-path="Malaysia">
+                    Malaysia
+                </option>
+                                            <option value="MV" data-target="filter-node" data-context="region" data-path="Maldives">
+                    Maldives
+                </option>
+                                            <option value="ML" data-target="filter-node" data-context="region" data-path="Mali">
+                    Mali
+                </option>
+                                            <option value="MT" data-target="filter-node" data-context="region" data-path="Malta">
+                    Malta
+                </option>
+                                            <option value="MH" data-target="filter-node" data-context="region" data-path="Marshall Islands">
+                    Marshall Islands
+                </option>
+                                            <option value="MQ" data-target="filter-node" data-context="region" data-path="Martinique">
+                    Martinique
+                </option>
+                                            <option value="MR" data-target="filter-node" data-context="region" data-path="Mauritania">
+                    Mauritania
+                </option>
+                                            <option value="MU" data-target="filter-node" data-context="region" data-path="Mauritius">
+                    Mauritius
+                </option>
+                                            <option value="YT" data-target="filter-node" data-context="region" data-path="Mayotte">
+                    Mayotte
+                </option>
+                                            <option value="MX" data-target="filter-node" data-context="region" data-path="Mexico">
+                    Mexico
+                </option>
+                                            <option value="FM" data-target="filter-node" data-context="region" data-path="Micronesia, Federated States of">
+                    Micronesia, Federated States of
+                </option>
+                                            <option value="MD" data-target="filter-node" data-context="region" data-path="Moldova">
+                    Moldova
+                </option>
+                                            <option value="MC" data-target="filter-node" data-context="region" data-path="Monaco">
+                    Monaco
+                </option>
+                                            <option value="MN" data-target="filter-node" data-context="region" data-path="Mongolia">
+                    Mongolia
+                </option>
+                                            <option value="ME" data-target="filter-node" data-context="region" data-path="Montenegro">
+                    Montenegro
+                </option>
+                                            <option value="MS" data-target="filter-node" data-context="region" data-path="Montserrat">
+                    Montserrat
+                </option>
+                                            <option value="MA" data-target="filter-node" data-context="region" data-path="Morocco">
+                    Morocco
+                </option>
+                                            <option value="MZ" data-target="filter-node" data-context="region" data-path="Mozambique">
+                    Mozambique
+                </option>
+                                            <option value="MM" data-target="filter-node" data-context="region" data-path="Myanmar (Burma)">
+                    Myanmar (Burma)
+                </option>
+                                            <option value="NA" data-target="filter-node" data-context="region" data-path="Namibia">
+                    Namibia
+                </option>
+                                            <option value="NR" data-target="filter-node" data-context="region" data-path="Nauru">
+                    Nauru
+                </option>
+                                            <option value="NP" data-target="filter-node" data-context="region" data-path="Nepal">
+                    Nepal
+                </option>
+                                            <option value="AN" data-target="filter-node" data-context="region" data-path="Netherlands Antilles">
+                    Netherlands Antilles
+                </option>
+                                            <option value="NC" data-target="filter-node" data-context="region" data-path="New Caledonia">
+                    New Caledonia
+                </option>
+                                            <option value="NZ" data-target="filter-node" data-context="region" data-path="New Zealand">
+                    New Zealand
+                </option>
+                                            <option value="NI" data-target="filter-node" data-context="region" data-path="Nicaragua">
+                    Nicaragua
+                </option>
+                                            <option value="NE" data-target="filter-node" data-context="region" data-path="Niger">
+                    Niger
+                </option>
+                                            <option value="NG" data-target="filter-node" data-context="region" data-path="Nigeria">
+                    Nigeria
+                </option>
+                                            <option value="NU" data-target="filter-node" data-context="region" data-path="Niue">
+                    Niue
+                </option>
+                                            <option value="NF" data-target="filter-node" data-context="region" data-path="Norfolk Island">
+                    Norfolk Island
+                </option>
+                                            <option value="MP" data-target="filter-node" data-context="region" data-path="Northern Mariana Islands">
+                    Northern Mariana Islands
+                </option>
+                                            <option value="NO" data-target="filter-node" data-context="region" data-path="Norway">
+                    Norway
+                </option>
+                                            <option value="OM" data-target="filter-node" data-context="region" data-path="Oman">
+                    Oman
+                </option>
+                                            <option value="PK" data-target="filter-node" data-context="region" data-path="Pakistan">
+                    Pakistan
+                </option>
+                                            <option value="PW" data-target="filter-node" data-context="region" data-path="Palau">
+                    Palau
+                </option>
+                                            <option value="PS" data-target="filter-node" data-context="region" data-path="Palestinian Territory, Occupied">
+                    Palestinian Territory, Occupied
+                </option>
+                                            <option value="PA" data-target="filter-node" data-context="region" data-path="Panama">
+                    Panama
+                </option>
+                                            <option value="PG" data-target="filter-node" data-context="region" data-path="Papua New Guinea">
+                    Papua New Guinea
+                </option>
+                                            <option value="PY" data-target="filter-node" data-context="region" data-path="Paraguay">
+                    Paraguay
+                </option>
+                                            <option value="PE" data-target="filter-node" data-context="region" data-path="Peru">
+                    Peru
+                </option>
+                                            <option value="PH" data-target="filter-node" data-context="region" data-path="Philippines">
+                    Philippines
+                </option>
+                                            <option value="PL" data-target="filter-node" data-context="region" data-path="Poland">
+                    Poland
+                </option>
+                                            <option value="PT" data-target="filter-node" data-context="region" data-path="Portugal">
+                    Portugal
+                </option>
+                                            <option value="PR" data-target="filter-node" data-context="region" data-path="Puerto Rico">
+                    Puerto Rico
+                </option>
+                                            <option value="QA" data-target="filter-node" data-context="region" data-path="Qatar">
+                    Qatar
+                </option>
+                                            <option value="RE" data-target="filter-node" data-context="region" data-path="Reunion">
+                    Reunion
+                </option>
+                                            <option value="RO" data-target="filter-node" data-context="region" data-path="Romania">
+                    Romania
+                </option>
+                                            <option value="RU" data-target="filter-node" data-context="region" data-path="Russia">
+                    Russia
+                </option>
+                                            <option value="RW" data-target="filter-node" data-context="region" data-path="Rwanda">
+                    Rwanda
+                </option>
+                                            <option value="SH" data-target="filter-node" data-context="region" data-path="Saint Helena">
+                    Saint Helena
+                </option>
+                                            <option value="KN" data-target="filter-node" data-context="region" data-path="Saint Kitts and Nevis">
+                    Saint Kitts and Nevis
+                </option>
+                                            <option value="LC" data-target="filter-node" data-context="region" data-path="Saint Lucia">
+                    Saint Lucia
+                </option>
+                                            <option value="MF" data-target="filter-node" data-context="region" data-path="Saint Martin (French part)">
+                    Saint Martin (French part)
+                </option>
+                                            <option value="PM" data-target="filter-node" data-context="region" data-path="Saint Pierre and Miquelon">
+                    Saint Pierre and Miquelon
+                </option>
+                                            <option value="VC" data-target="filter-node" data-context="region" data-path="Saint Vincent and the Grenadines">
+                    Saint Vincent and the Grenadines
+                </option>
+                                            <option value="WS" data-target="filter-node" data-context="region" data-path="Samoa">
+                    Samoa
+                </option>
+                                            <option value="SM" data-target="filter-node" data-context="region" data-path="San Marino">
+                    San Marino
+                </option>
+                                            <option value="ST" data-target="filter-node" data-context="region" data-path="Sao Tome and Principe">
+                    Sao Tome and Principe
+                </option>
+                                            <option value="SA" data-target="filter-node" data-context="region" data-path="Saudi Arabia">
+                    Saudi Arabia
+                </option>
+                                            <option value="SN" data-target="filter-node" data-context="region" data-path="Senegal">
+                    Senegal
+                </option>
+                                            <option value="RS" data-target="filter-node" data-context="region" data-path="Serbia">
+                    Serbia
+                </option>
+                                            <option value="SC" data-target="filter-node" data-context="region" data-path="Seychelles">
+                    Seychelles
+                </option>
+                                            <option value="SL" data-target="filter-node" data-context="region" data-path="Sierra Leone">
+                    Sierra Leone
+                </option>
+                                            <option value="SG" data-target="filter-node" data-context="region" data-path="Singapore">
+                    Singapore
+                </option>
+                                            <option value="SX" data-target="filter-node" data-context="region" data-path="Sint Maarten (Dutch part)">
+                    Sint Maarten (Dutch part)
+                </option>
+                                            <option value="SK" data-target="filter-node" data-context="region" data-path="Slovakia">
+                    Slovakia
+                </option>
+                                            <option value="SI" data-target="filter-node" data-context="region" data-path="Slovenia">
+                    Slovenia
+                </option>
+                                            <option value="SB" data-target="filter-node" data-context="region" data-path="Solomon Islands">
+                    Solomon Islands
+                </option>
+                                            <option value="SO" data-target="filter-node" data-context="region" data-path="Somalia">
+                    Somalia
+                </option>
+                                            <option value="ZA" data-target="filter-node" data-context="region" data-path="South Africa">
+                    South Africa
+                </option>
+                                            <option value="GS" data-target="filter-node" data-context="region" data-path="South Georgia and the South Sandwich Islands">
+                    South Georgia and the South Sandwich Islands
+                </option>
+                                            <option value="KR" data-target="filter-node" data-context="region" data-path="South Korea">
+                    South Korea
+                </option>
+                                            <option value="SS" data-target="filter-node" data-context="region" data-path="South Sudan">
+                    South Sudan
+                </option>
+                                            <option value="ES" data-target="filter-node" data-context="region" data-path="Spain">
+                    Spain
+                </option>
+                                            <option value="LK" data-target="filter-node" data-context="region" data-path="Sri Lanka">
+                    Sri Lanka
+                </option>
+                                            <option value="SR" data-target="filter-node" data-context="region" data-path="Suriname">
+                    Suriname
+                </option>
+                                            <option value="SJ" data-target="filter-node" data-context="region" data-path="Svalbard and Jan Mayen">
+                    Svalbard and Jan Mayen
+                </option>
+                                            <option value="SZ" data-target="filter-node" data-context="region" data-path="Swaziland">
+                    Swaziland
+                </option>
+                                            <option value="SE" data-target="filter-node" data-context="region" data-path="Sweden">
+                    Sweden
+                </option>
+                                            <option value="CH" data-target="filter-node" data-context="region" data-path="Switzerland">
+                    Switzerland
+                </option>
+                                            <option value="TW" data-target="filter-node" data-context="region" data-path="Taiwan">
+                    Taiwan
+                </option>
+                                            <option value="TJ" data-target="filter-node" data-context="region" data-path="Tajikistan">
+                    Tajikistan
+                </option>
+                                            <option value="TZ" data-target="filter-node" data-context="region" data-path="Tanzania">
+                    Tanzania
+                </option>
+                                            <option value="TH" data-target="filter-node" data-context="region" data-path="Thailand">
+                    Thailand
+                </option>
+                                            <option value="NL" data-target="filter-node" data-context="region" data-path="The Netherlands">
+                    The Netherlands
+                </option>
+                                            <option value="TL" data-target="filter-node" data-context="region" data-path="Timor-Leste">
+                    Timor-Leste
+                </option>
+                                            <option value="TG" data-target="filter-node" data-context="region" data-path="Togo">
+                    Togo
+                </option>
+                                            <option value="TK" data-target="filter-node" data-context="region" data-path="Tokelau">
+                    Tokelau
+                </option>
+                                            <option value="TO" data-target="filter-node" data-context="region" data-path="Tonga">
+                    Tonga
+                </option>
+                                            <option value="TT" data-target="filter-node" data-context="region" data-path="Trinidad">
+                    Trinidad
+                </option>
+                                            <option value="TN" data-target="filter-node" data-context="region" data-path="Tunisia">
+                    Tunisia
+                </option>
+                                            <option value="TR" data-target="filter-node" data-context="region" data-path="Turkey">
+                    Turkey
+                </option>
+                                            <option value="TM" data-target="filter-node" data-context="region" data-path="Turkmenistan">
+                    Turkmenistan
+                </option>
+                                            <option value="TC" data-target="filter-node" data-context="region" data-path="Turks and Caicos Islands">
+                    Turks and Caicos Islands
+                </option>
+                                            <option value="TV" data-target="filter-node" data-context="region" data-path="Tuvalu">
+                    Tuvalu
+                </option>
+                                            <option value="UG" data-target="filter-node" data-context="region" data-path="Uganda">
+                    Uganda
+                </option>
+                                            <option value="UA" data-target="filter-node" data-context="region" data-path="Ukraine">
+                    Ukraine
+                </option>
+                                            <option value="AE" data-target="filter-node" data-context="region" data-path="United Arab Emirates">
+                    United Arab Emirates
+                </option>
+                                            <option value="GB" data-target="filter-node" data-context="region" data-path="United Kingdom">
+                    United Kingdom
+                </option>
+                                            <option value="US" data-target="filter-node" data-context="region" data-path="United States">
+                    United States
+                </option>
+                                            <option value="UM" data-target="filter-node" data-context="region" data-path="United States Minor Outlying Islands">
+                    United States Minor Outlying Islands
+                </option>
+                                            <option value="UY" data-target="filter-node" data-context="region" data-path="Uruguay">
+                    Uruguay
+                </option>
+                                            <option value="VI" data-target="filter-node" data-context="region" data-path="U.S. Virgin Islands">
+                    U.S. Virgin Islands
+                </option>
+                                            <option value="UZ" data-target="filter-node" data-context="region" data-path="Uzbekistan">
+                    Uzbekistan
+                </option>
+                                            <option value="VU" data-target="filter-node" data-context="region" data-path="Vanuatu">
+                    Vanuatu
+                </option>
+                                            <option value="VE" data-target="filter-node" data-context="region" data-path="Venezuela">
+                    Venezuela
+                </option>
+                                            <option value="VN" data-target="filter-node" data-context="region" data-path="Vietnam">
+                    Vietnam
+                </option>
+                                            <option value="WF" data-target="filter-node" data-context="region" data-path="Wallis and Futuna">
+                    Wallis and Futuna
+                </option>
+                                            <option value="EH" data-target="filter-node" data-context="region" data-path="Western Sahara">
+                    Western Sahara
+                </option>
+                                            <option value="YE" data-target="filter-node" data-context="region" data-path="Yemen">
+                    Yemen
+                </option>
+                                            <option value="CD" data-target="filter-node" data-context="region" data-path="Zaire (Democratic Republic of Congo)">
+                    Zaire (Democratic Republic of Congo)
+                </option>
+                                            <option value="ZM" data-target="filter-node" data-context="region" data-path="Zambia">
+                    Zambia
+                </option>
+                                            <option value="ZW" data-target="filter-node" data-context="region" data-path="Zimbabwe">
+                    Zimbabwe
+                </option>
+                    </optgroup>
+    </select>
+
+			</div>
+
+		</div>
+		<div class="results_bar"></div>
+		<div class="results_container">
+			<div class="results">
+				
+			</div>
 		</div>
 
-		<div class="sidebar"></div>
-
+			
+		</div>
 	</div>
 </body>
 <script src="main.js"></script>
