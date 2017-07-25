@@ -23,27 +23,30 @@ fetch("https://api.etsy.com/v2/listings/active?api_key=h9oq2yf3twf4ziejn10b717i&
 			} 
 			response.json().then(function(data){
 				let list = ''
+
+				let rl = data.results.length
 				let sr = document.querySelector('.results_bar')
-				sr.innerHTML = "All Catergories "
+				
+				sr.innerHTML = "All categories > " + "'" +term+ "'" + " ("+rl+ " Results)"
+				
+				let counter = 0
 				data.results.forEach(function(data){
 					console.log(data)
 					list += `
 								<div class="data">
 									<img src="${data.Images[0].url_170x135}"/>
+									<div class="inside_content">
 									<li> ${data.title}</li>
 									<li id="shop_name"> ${data.Shop.shop_name}</li>
-									<li> $${data.price}</li>
+									<li id="price"> $${data.price}</li>
 									<a href="${data.url}"></a>
-									
+									</div>
 								</div>
 							</div>
 							`
 					})
-
 					main.innerHTML += list
-						
 					})
-			})
 
-				
+			})	
 		}

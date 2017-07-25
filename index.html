@@ -2,7 +2,8 @@
 <html>
 <head>
 	<title>Etsy</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="main.css">	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,700" rel="stylesheet">
 </head>
 <body>
 	<div class="header">
@@ -64,9 +65,9 @@
 			<div class="one">
 				<form class="search_reset">
 					<h4>Shop location</h4>
-					<div id="radio"><input type="radio" name="location"> Anywhere </div>
-					<div id="radio"><input type="radio" name="location"> United States<br></div>
-					<div id="radio"><input type="radio" name="location"> Custom<br>
+					<div class="radio"><input type="radio" name="location">Anywhere</div>
+					<div class="radio"><input type="radio" name="location">United States<br></div>
+					<div class="radio"><input type="radio" name="location">Custom<br>
 						<div class="enter_location">
 							<input type="text" name="enter_location" placeholder="Enter location" id="location">
 							<button id="arrow">></button>
@@ -77,20 +78,20 @@
 			<div class="one">
 				<form class="search_reset">
 				<h4>Item type</h4>
-					<div id="radio"><input type="radio" name="item"> All items </div>
-					<div id="radio"><input type="radio" name="item"> Handmade<br></div>
-					<div id="radio"><input type="radio" name="item"> Vintage<br></div>
+					<div class="radio"><input type="radio" name="item"> All items </div>
+					<div class="radio"><input type="radio" name="item"> Handmade<br></div>
+					<div class="radio"><input type="radio" name="item"> Vintage<br></div>
 				</form>
 			</div>
 			<div class="one">
 				<form class="search_reset">
 				<h4>Price ($)</h4>
-					<div id="radio"><input type="radio" name="price"> Any price </div>
-					<div id="radio"><input type="radio" name="price"> Under $25<br></div>
-					<div id="radio"><input type="radio" name="price"> $25 to $50<br></div>
-					<div id="radio"><input type="radio" name="price"> $50 to $100<br></div>
-					<div id="radio"><input type="radio" name="price"> Over $100<br></div>
-					<div id="radio"><input type="radio" name="price"> Custom<br></div>
+					<div class="radio"><input type="radio" name="price"> Any price </div>
+					<div class="radio"><input type="radio" name="price"> Under $25<br></div>
+					<div class="radio"><input type="radio" name="price"> $25 to $50<br></div>
+					<div class="radio"><input type="radio" name="price"> $50 to $100<br></div>
+					<div class="radio"><input type="radio" name="price"> Over $100<br></div>
+					<div class="radio"><input type="radio" name="price"> Custom<br></div>
 						<div class="price_range">
 							<input type="text" name="price_range" placeholder="Low" id="price_range">
 							to
@@ -101,15 +102,22 @@
 			</div>
 			<div class="one">
 				<h4>Filter by color</h4>
-				<ul class="colors">
-					<li></li>
-				</ul>
+					<ul class="colors_list">
+						<li class="colors" id="red"></li>
+						<li class="colors" id="orange"></li>
+						<li class="colors" id="yellow"></li>
+						<li class="colors" id="green"></li>
+						<li class="colors" id="blue"></li>
+						<li class="colors" id="purple"></li>
+						<li class="colors" id="black"></li>
+						<li class="colors" id="white"></li>
+					</ul>
 
 			</div>
 			<div class="one">
 				<h4>Ordering options</h4>
-					<div id="radio"><input type="checkbox" name="price"> Accepts Etsy gift cards </div>
-					<div id="radio"><input type="checkbox" name="price"> Customizable<br></div>
+					<div class="radio"><input type="checkbox" name="price"> Accepts Etsy gift cards </div>
+					<div class="radio"><input type="checkbox" name="price"> Customizable<br></div>
 			</div>
 			<div class="one">
 				<h4>Ship to</h4>
@@ -925,7 +933,9 @@
 			</div>
 
 		</div>
-		<div class="results_bar"></div>
+		<div class="results_bar">
+	
+		</div>
 		<div class="results_container">
 			<div class="results">
 				
